@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
@@ -8,7 +8,7 @@
 	<meta property="og:description" content="code4aceh"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 
-<title>Code4Aceh-DigitalEarthArchive</title>
+<title>夏祭りマップ2016</title>
 	<link rel="SHORTCUT ICON" href="img/favicon.ico">
 	<style>
 		@import url(Build/Cesium/Widgets/widgets.css);
@@ -94,7 +94,7 @@
 		viewPointsArray[1]=new viewPoints("BlangEdit",4.633426,95.578812,0,-85,50000);
 		viewPointsArray[2]=new viewPoints("KetapangEdit",4.633426,95.578812,0,-85,50000);
 		viewPointsArray[3]=new viewPoints("Views from above",5.223058,95.737349,0,-85,180000);
-		viewPointsArray[4]=new viewPoints("First View", 35.689314,139.691783,0,-100,30000);
+		viewPointsArray[4]=new viewPoints("First View",35.688247,139.599902,0,-100,28000);
 		function kmlData(_label, _url) {
 			this.label = _label;
 			this.url = _url;
@@ -125,9 +125,9 @@
 		if (mobile == 0) {
 			viewer = new Cesium.Viewer('cesiumContainer',{
 			imageryProvider : new Cesium.ArcGisMapServerImageryProvider({
-                   		url : 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer'
-               		}),
-               		baseLayerPicker : false,
+        			url : 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer'
+    			}),
+    			baseLayerPicker : false,
 			navigationHelpButton : false,
 			geocoder:false,
 			timeline: false,
@@ -145,9 +145,9 @@
 		} else {
 			viewer = new Cesium.Viewer('cesiumContainer',{
 				imageryProvider : new Cesium.ArcGisMapServerImageryProvider({
-                   			url : 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer'
-               			}),
-               			baseLayerPicker : false,
+					 url : 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer'
+    				}),
+    				baseLayerPicker : false,
 				sceneMode: Cesium.SceneMode.COLUMBUS_VIEW,
 				navigationHelpButton : false,
 				geocoder:false,

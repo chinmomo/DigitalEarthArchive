@@ -1,11 +1,11 @@
 @charset "utf-8";
 
 .box{
-	width:320px;
+	width:900px;
 	margin-left:-3px;
 	margin-top:-7px;
 	padding:0px;
-	min-height:250px;}
+	min-height:900px;}
 .bar{
 	height: 100px;
 	margin: 10px;
